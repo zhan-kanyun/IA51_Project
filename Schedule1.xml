@@ -53,7 +53,7 @@
       <start_time>1300</start_time>
       <duration>500</duration>
       <location>company</location>
-      <type>work</type>
+      <type>tm_slow</type>
     </Activity>
   </Episode>
   <Episode id="7">
