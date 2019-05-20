@@ -1,0 +1,27 @@
+/** 
+ * 
+ */
+package Schedule
+
+/** 
+ * @author 15800
+ * 
+ */
+ 
+class Episode extends Object {
+	/* attributes */
+	public var trip : Trip
+	public var activity : Activity
+	public var id : int
+
+	/* constructor*/
+	new(id: int){
+		this.id = id
+	}
+	new(id : int, trip : Trip, activity : Activity) {
+		this.id = id
+		this.trip = trip
+		this.activity = activity
+	}
+}
+

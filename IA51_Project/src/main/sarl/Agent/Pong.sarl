@@ -1,0 +1,18 @@
+/** 
+ * 
+ */
+package Agent
+
+/** 
+ * @author 15800
+ * 
+ */
+event Pong {
+	val index : int
+	val name : String
+
+	new(i : int, s : String) {
+		this.index = i
+		this.name = s
+	}
+}

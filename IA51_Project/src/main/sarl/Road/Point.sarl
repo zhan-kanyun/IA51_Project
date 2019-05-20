@@ -1,0 +1,45 @@
+/** 
+ * 
+ */
+package Road
+
+/** 
+ * @author 15800
+ * 
+ */
+class Point extends Object {
+	var x: float
+	var y : float
+
+	new(x:float, y:float){
+		this.x = x
+		this.y = y
+	}
+	def getX: float{
+		return this.x
+	}
+
+	def getY : float {
+		return this.y
+	}
+	
+	def setX(x:float){
+		this.x = x
+	}
+
+	def setY(y : float) {
+		this.y = y
+	}
+	
+	def distanceToOrigine : float {
+		return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2)) as float
+	}
+
+	def distanceToOther(point:Point):float {
+        return Math.sqrt(Math.pow(this.x-point.x, 2)+Math.pow(this.y-point.y, 2)) as float
+	}
+}
+
+
+
+

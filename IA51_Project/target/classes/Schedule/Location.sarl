@@ -1,0 +1,24 @@
+/** 
+ * 
+ */
+package Schedule
+
+import java.util.Date
+
+/** 
+ * @author 15800
+ * 
+ */
+class Location extends Object {
+	public var name : String
+	public var open_time : int
+	public var close_time : int
+	
+	
+	new(name : String, open_time : int, close_time : int) {
+		this.name = name
+		this.open_time = open_time
+		this.close_time = close_time
+	}
+
+}

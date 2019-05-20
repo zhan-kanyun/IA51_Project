@@ -1,0 +1,22 @@
+/** 
+ * 
+ */
+package Schedule
+
+import java.util.Date
+
+/** 
+ * @author 15800
+ * 
+ */
+ 
+class Schedule extends Object {
+	var day: Day_of_Week
+	var list: Episode[]
+
+	new(l : Episode[], day : Day_of_Week) {
+		this.list = l
+		this.day = day
+	}
+	
+}

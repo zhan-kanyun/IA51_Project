@@ -1,0 +1,39 @@
+/** 
+ * 
+ */
+package Schedule
+
+/** 
+ * @author 15800
+ * 
+ */
+class Activity extends Object {
+	
+	/* attributes */
+	public var id : int
+	public var start_time : int
+	public var duration : int
+	public var location : Location
+	public var type : Activity_Type
+	
+	/* constructor */
+	new(id : int) {
+		this.id = id
+		this.start_time = -1
+		this.duration = -1
+		this.location = null
+		this.type = null
+	}
+	
+	new(id : int, st : int, d : int , l : Location, type:Activity_Type) {
+		this.id = id
+		this.start_time = st
+		this.duration = d
+		this.location = l	
+		this.type = type
+	}
+	
+	
+
+}
+

@@ -1,0 +1,42 @@
+/** 
+ * 
+ */
+package Schedule
+
+import java.util.Date
+
+/** 
+ * @author 15800
+ * 
+ */
+class Trip extends Object {
+	var id : int
+	var origin_name : Location
+	var start_time : int
+	var duration : int
+	var destination : Location
+	var mode : Transport_Mode
+
+	/* constructor */
+
+	new(id : int) {
+		this.id = id
+		this.origin_name = null
+		this.start_time = -1
+		this.duration = -1
+		this.destination = null
+		this.mode = null
+	}
+	
+	new(id : int, ori:Location, st:int, d:int, des:Location, mode: Transport_Mode){
+		this.id = id
+		this.origin_name = ori
+		this.start_time = st
+		this.duration = d
+		this.destination = des
+		this.mode = mode
+	}
+	
+}
+
+

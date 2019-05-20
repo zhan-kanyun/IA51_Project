@@ -1,0 +1,17 @@
+/** 
+ * 
+ */
+package Agent
+
+/** 
+ * @author 15800
+ * 
+ */
+event Ping{
+	val index :int 
+	val name : String
+	new(i :int, s :String){
+		this.index = i
+		this.name = s
+	}
+}
